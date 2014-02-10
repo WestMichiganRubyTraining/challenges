@@ -39,7 +39,7 @@ git remote add origin git@github.com:github-handle/repo-name.git
 
 * After each new project change, make sure to add new files to your project with `git add .` or `git add filename`. Then commit changes with `git commit –m “commit notes”`
 
-* You can push whenever you want. If you have made several commits without pushing, your next commit will push all the un-pushed commits at once.
+* You can push whenever you want. If you have made several commits without pushing, they will all go at once with the next push.
 
 * Use `git log` to see a history of your commit changes and `git status` to see the status of your present work.
 
