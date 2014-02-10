@@ -23,7 +23,9 @@ git config --global user.email "your_email@whatever.com"
 * Go to your github account and create a repo for your project to reside
 
 * When you create the repo, you will be redirected to notes for connecting your local machine’s repo to your github repo:
-```git remote add origin git@github.com:github-handle/repo-name.git```
+```
+git remote add origin git@github.com:github-handle/repo-name.git
+```
 
 * Push your commits to the remote repository 
 ```git push -u origin master```
