@@ -12,7 +12,7 @@ git config --global user.name "Your Name"
 git config --global user.email "your_email@whatever.com"
 ```
 	
-* cd to your gem’s project root directory
+* cd to your project's root directory
 
 * Initialize a git project in this directory `git init`
 
