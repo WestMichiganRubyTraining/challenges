@@ -1,17 +1,19 @@
-<h1>Github Collaboration</h1>
+<h1>Github, Sinatra, and Heroku</h1>
 
-<h2>1. Getting an Existing Project on Github</h2>
+<h2>Github Collaboration</h2>
+
+<h3>1. Getting an Existing Project on Github</h3>
 
 * Create a github account
 
 * Install git on your computer. `sudo install git` Or refer to <a href="http://githowto.com">http://githowto.com </a>
-	
+
 * Configure git on your computer. Make sure these correspond with your github account settings.
 ```
 git config --global user.name "Your Name"
 git config --global user.email "your_email@whatever.com"
 ```
-	
+
 * cd to your project's root directory
 
 * Initialize a git project in this directory `git init`
@@ -27,10 +29,10 @@ git config --global user.email "your_email@whatever.com"
 git remote add origin git@github.com:github-handle/repo-name.git
 ```
 
-* Push your commits to the remote repository 
+* Push your commits to the remote repository
 ```git push -u origin master```
- 
-<h2>2. Basic Version Control of Your Repo</h2>
+
+<h3>2. Basic Version Control of Your Repo</h3>
 
 <b>Resource:</b> http://byte.kde.org/~zrusin/git/git-cheat-sheet-medium.png <br>
 <b>Resource:</b> http://githowto.com/
@@ -45,13 +47,13 @@ git remote add origin git@github.com:github-handle/repo-name.git
 
 * Now try doing some more advanced things like reverting, pulling, making new branches, etc by working through some of the attached resources.
 
-<h2>3. Forking Existing Repos. Submitting Pull Requests</h2>
+<h3>3. Forking Existing Repos. Submitting Pull Requests</h3>
 
 <b>Resource:</b> https://help.github.com/articles/fork-a-repo
 
 * Go to original author’s repo on github and fork into a github repo on your account.
 
-* Clone your forked repo onto your local computer 
+* Clone your forked repo onto your local computer
 ```
 git clone git@github.com:your-git-handle/reponame.git
 ```
@@ -76,10 +78,81 @@ git remote add upstream https://github.com/YourGitHandle/Reponame.git
 
 * Go to your github repo. Go to your <new-branch-name> branch. Submit pull request
 
-* The original author may now authorize the pull request. Once authorized, the author can now merge the new branch into the master branch with: 
+* The original author may now authorize the pull request. Once authorized, the author can now merge the new branch into the master branch with:
 ```
 git checkout <new-branch-name>
 git merge master
 ```
 
+<h2>Build Sinatra App</h2>
 
+<b>Resource: </b>http://www.sinatrarb.com/intro.html
+
+<h3> 1. Sinatra Hello World!</h3>
+
+```
+#myapp.rb
+require 'sinatra'
+
+get '/' do
+  'Hello World!'
+end
+```
+Install the sinatra gem by running the following command in the terminal
+```gem install sinatra```
+
+Start the sinatra server in terminal by running
+```ruby myapp.rb```
+
+Navigate to ```http://localhost:4567``` in browser
+
+<h3> 2. Install Twitter Bootstrap</h3>
+
+* Visit ```http://getbootstrap.com/``` and click download button.
+
+* Create and ```public/``` and ```views/``` folders in you sinatra app's root directory
+
+* Unzip the bootstrap download and move the ```css```, ```fonts```, and ```js``` folders into you sinatra app's public folder.
+
+* Visit ```http://getbootstrap.com/getting-started/#examples``` grab an eample template.
+
+* Create a new file index.erb and paste contents of example tbs tempate changing css and js to use correct relative paths.
+
+* Map the '/' route to your new template
+
+```
+# myapp.rb
+require 'sinatra'
+
+get '/' do
+  erb :index
+end
+```
+
+<h2>Deployment to Heroku</h2>
+
+<b>Resource:</b> https://devcenter.heroku.com/articles/rack
+
+<h3>Prepare Sinatra project for Heroku</h3>
+
+* gem install heroku
+
+* heroku create
+
+<h3>Push app to Heroku</h3>
+
+* ```git push heroku master```
+
+* Potential Error: ```Permission denied public keys```
+
+* Why: Heroku needs to have you public id_rsa key to interact with you GitHub repository on your behalf.
+
+* Solution: ```heroku keys:add ~/.ssh/id_rsa.pub```  This command pushes the public key up to Heroku so it may interact with you repository.
+
+<h4>Useful Heroku Information and Tips</h4>
+
+* ```heroku open``` opens your heroku app your default browser
+
+* ```heroku logs``` will display the log information to help debug errors
+
+* ```heroku ps:scale web=1``` may be required to scale the application's Heroku web workers, or processes, from zero to one
