@@ -1,10 +1,12 @@
-<h1>Getting Your Hands Dirty With Ruby</h1>
+# Getting Your Hands Dirty With Ruby
 
-The repo contains challeges from the West Michigan <a href="http://www.meetup.com/mi-ruby/">Getting Your Hands Dirty With Ruby</a> meetup group.  The purpose of this repo is to port these challenges to the web to encourage futher collaboration for the benefit of the group.  This is a work in progress and will be updated and expanded as needed/requested.
+This repo contains challenges from the West Michigan [Get Your Hands Dirty With Ruby](http://www.meetup.com/mi-ruby/) meetup group.
+We're gathering them in a single location to encourage further collaboration for the benefit of all.
+This is a work in progress and will be updated and expanded as needed/requested.
 
-<h2>Challenges</h2>
-* Ruby
-* Rspec
-* Github
-* Sinatra
-* Heroku
+## Challenges
+* [Ruby](https://github.com/westmichiganrubytraining/challenges/tree/master/ruby/README.md)
+* [Rspec](https://github.com/westmichiganrubytraining/challenges/tree/master/rspec/README.md)
+* [Github](https://github.com/westmichiganrubytraining/challenges/tree/master/git/README.md)
+* [Sinatra](https://github.com/westmichiganrubytraining/challenges/tree/master/sinatra/README.md)
+* [Heroku](https://github.com/westmichiganrubytraining/challenges/tree/master/heroku/README.md)
