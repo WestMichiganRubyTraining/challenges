@@ -5,8 +5,8 @@ We're gathering them in a single location to encourage further collaboration for
 This is a work in progress and will be updated and expanded as needed/requested.
 
 ## Challenges
-* [Ruby](tree/master/ruby)
-* [Rspec](tree/master/rspec)
-* [Github](tree/master/git)
-* [Sinatra](tree/master/sinatra)
-* [Heroku](tree/master/heroku)
+* [Ruby](/tree/master/ruby)
+* [Rspec](/tree/master/rspec)
+* [Github](/tree/master/git)
+* [Sinatra](/tree/master/sinatra)
+* [Heroku](/tree/master/heroku)
