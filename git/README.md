@@ -5,7 +5,8 @@ Clone the Wes Michigan Ruby Users <a href="https://github.com/WestMichiganRubyTr
 
 <h2>Make Changes and Commit Them Locally</h2>
 * Open the cloned repo in your favorite text editor.
-* Create a new branch to work from. Add your name to the list of Git champions. 
+* Create a new branch to work from. 
+* Add your name to the list of Git champions. 
 * Commit your changes to your local machine.
 
 <h2>Push to Github and Make Pull Request</h2>
