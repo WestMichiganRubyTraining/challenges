@@ -1,7 +1,7 @@
 <h1>Git Challenge</h1>
 
 <h2>Clone a Repo</h2>
-Clone the Get Your Hands Dirty With Ruby challenges repo using `git clone`. You might want to keep it on your local machine even after the challenge. Contributing to this repo is highly encouraged!
+Clone the Wes Michigan Ruby Users <a href="https://github.com/WestMichiganRubyTraining/challenges"> challenges repo</a> using `git clone`. You might want to keep it on your local machine even after the challenge. Contributing to this repo is highly encouraged!
 
 <h2>Make Changes and Commit Them Locally</h2>
 * Open the cloned repo in your favorite text editor.
