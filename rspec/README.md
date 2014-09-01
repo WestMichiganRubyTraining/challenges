@@ -28,4 +28,4 @@ Now we want to wrap a unit test around an existing feature, simulating taking ov
 
 <h3>3) Test Drive New Feature</h3>
 
-Using the same, now correctced FizzBuzz project, test drive a feature that will allow you to output the results of the 'fizzbuzzer' method to json. (Hint: use the errors as a learning tool to help you drive out expectations you may not know the exact value of.) <b>Again, remember to drive the feature out with specs first!</b>
+Using the same, now corrected FizzBuzz project, test drive a feature that will allow you to output the results of the 'fizzbuzzer' method to json. (Hint: use the errors as a learning tool to help you drive out expectations you may not know the exact value of.) <b>Again, remember to drive the feature out with specs first!</b>
