@@ -92,6 +92,7 @@ git remote add upstream https://github.com/YourGitHandle/Reponame.git
 git checkout <new-branch-name>
 git merge master
 ```
+You can work through this process with the demo `git_project` in this folder.
 
 # Useful Resources
 
